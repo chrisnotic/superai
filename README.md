@@ -1,6 +1,6 @@
 # Super.AI API client
 
-The super.AI Python library provides access to the super.AI API via Python and our command line interface (CLI). Full details on our API for are listed in our [API reference](https://super.ai/reference).
+The super.AI Python library provides access to the super.AI API via Python and our command line interface (CLI). Full details on our API are listed in our [API reference](https://super.ai/reference).
 
 In this README, you will find the following sections:
 
@@ -25,7 +25,7 @@ pip install superai
 
 ## CLI usage
 
-Installing the API client provides access to the `superai` command.
+Installing the API client provides access to the `superai` command from within your terminal.
 
 ```
 superai [command]
@@ -36,7 +36,7 @@ superai [command] --help
 
 ### Logging in
 
-In order to use the CLI, you need to pass us your API key. To do so use the following command:
+In order to use the CLI, you need to pass us your API key. Use the following command to do this:
 
 ```
 superai login --username {username}
@@ -52,7 +52,7 @@ Api key {api-key} was set
 
 If you created your account through Google Sign-In, you will need to manually set your API key:
 
-1. Find your API key in the super.AI dashboard by hovering over the profile icon in the lower left of the screen, then heading to API keys. You can copy the key by clicking on the copy (insert icon here) button. 
+1. Find your API key in the [super.AI dashboard](https://super.ai/dashboard/) by hovering over the profile icon in the lower left of the screen, then heading to API keys. You can copy the key by clicking on the copy (insert icon here) button. 
 2. Provide your API key to the client by using the following command (replacing `{API-key}` with your actual API key):
       ```
       superai config --api-key {api-key}
@@ -78,7 +78,7 @@ If you created your account through Google Sign-In, you will need to manually se
 
 ## Python usage
 
-The client allows you to run Python scripts on your machine to automate your work process. For example, you can use a script like this to create jobs:
+The client allows you to run Python scripts on your machine to automate your work processes. For example, you can use a script like this to submit data points for processing:
 
 ```
 import superai as ai
