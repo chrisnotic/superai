@@ -78,7 +78,7 @@ If you created your account through Google Sign-In, you will need to manually se
 
 ## Python usage
 
-The client allows you to run Python scripts on your machine to automate your work processes. For example, you can use a script like this to submit data points for processing:
+This client allows you to run Python scripts on your machine to automate your work processes. For example, you can use a script like this to submit data points for processing to a project that takes image inputs, replacing any `{variables}` where necessary:
 
 ```py
 import superai as ai
