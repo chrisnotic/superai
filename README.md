@@ -2,6 +2,13 @@
 
 The super.AI Python library provides access to the super.AI API via Python and our command line interface (CLI). Full details on our API for are listed in our [API reference](https://super.ai/reference).
 
+In this README, you will find the following sections:
+
+- [Installation](#installation)
+- [CLI usage](#cli-usage)
+- [CLI commands](#cli-commands)
+- [Python usage](#python-usage)
+
 ## Installation
 
 In your terminal, run:
@@ -47,24 +54,9 @@ If you created your account through Google Sign-In, you will need to manually se
 
 1. Find your API key in the super.AI dashboard by hovering over the profile icon in the lower left of the screen, then heading to API keys. You can copy the key by clicking on the copy (insert icon here) button. 
 2. Provide your API key to the client by using the following command (replacing `{API-key}` with your actual API key):
-  ```
-  superai config --api-key {api-key}
-  ```
-
-## Python usage
-
-The client allows you to run Python scripts on your machine to automate your work process. For example, you can use a script like this to create jobs:
-
-```
-import superai as ai
-
-client = ai.Client("{api-key}")
-
-client.create_jobs(
-    app_id="{project-id}",
-inputs=[{"image_url":"https://cdn.super.ai/cool-bulldog.jpg"},{"image_url":"https://cdn.super.ai/hot-dog-01.jpeg"}]
-)
-```
+      ```
+      superai config --api-key {api-key}
+      ```
 
 ## CLI commands
 
@@ -83,3 +75,18 @@ inputs=[{"image_url":"https://cdn.super.ai/cool-bulldog.jpg"},{"image_url":"http
 - `get_ground_truth_data`
 - `update_ground_truth`
 - `delete_ground_truth_data`
+
+## Python usage
+
+The client allows you to run Python scripts on your machine to automate your work process. For example, you can use a script like this to create jobs:
+
+```
+import superai as ai
+
+client = ai.Client("{api-key}")
+
+client.create_jobs(
+    app_id="{project-id}",
+    inputs=[{"image_url":"https://cdn.super.ai/cool-bulldog.jpg"},{"image_url":"https://cdn.super.ai/hot-dog-01.jpeg"}]
+)
+```
