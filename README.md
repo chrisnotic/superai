@@ -13,7 +13,7 @@ In this README, you will find the following sections:
 
 In your terminal, run:
 
-```
+```sh
 pip install superai
 ```
 
@@ -27,7 +27,7 @@ pip install superai
 
 Installing the API client provides access to the `superai` command from within your terminal.
 
-```
+```sh
 superai [command]
 
 # Run `--help` for detailed information about CLI commands, including required and optional flags.
@@ -38,7 +38,7 @@ superai [command] --help
 
 In order to use the CLI, you need to pass us your API key. Use the following command to do this:
 
-```
+```sh
 superai login --username {username}
 ```
 
@@ -46,7 +46,7 @@ Replace `{username}` with your super.AI account username.
 
 When prompted, enter your password and press enter. You should see a confirmation like this:
 
-```
+```sh
 Api key {api-key} was set
 ```
 
@@ -54,7 +54,7 @@ If you created your account through Google Sign-In, you will need to manually se
 
 1. Find your API key in the [super.AI dashboard](https://super.ai/dashboard/) by hovering over the profile icon in the lower left of the screen, then heading to API keys. You can copy the key by clicking on the copy (insert icon here) button. 
 2. Provide your API key to the client by using the following command (replacing `{API-key}` with your actual API key):
-      ```
+      ```sh
       superai config --api-key {api-key}
       ```
 
@@ -80,7 +80,7 @@ If you created your account through Google Sign-In, you will need to manually se
 
 The client allows you to run Python scripts on your machine to automate your work processes. For example, you can use a script like this to submit data points for processing:
 
-```
+```py
 import superai as ai
 
 client = ai.Client("{api-key}")
