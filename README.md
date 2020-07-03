@@ -48,7 +48,7 @@ If you created your account through Google Sign-In, you will need to manually se
 1. Find your API key in the super.AI dashboard by hovering over the profile icon in the lower left of the screen, then heading to API keys. You can copy the key by clicking on the copy (insert icon here) button. 
 2. Provide your API key to the client by using the following command (replacing `{API-key}` with your actual API key):
   ```
-  superai config --api-key {API-key}
+  superai config --api-key {api-key}
   ```
 
 ## Python usage
