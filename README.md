@@ -58,6 +58,14 @@ If you created your account through Google Sign-In, you will need to manually se
       superai config --api-key {api-key}
       ```
 
+### Logging out
+
+You can log out and thereby remove your API key by running the following command:
+
+```sh
+superai logout
+```
+
 ## CLI commands
 
 - `create_jobs`
